@@ -1,7 +1,5 @@
-FROM rabbitmq:3.7.17-alpine
+FROM rabbitmq:3.8.2-alpine
 
-RUN wget https://dl.bintray.com/rabbitmq/community-plugins/3.7.x/rabbitmq_message_timestamp/rabbitmq_message_timestamp-20170830-3.7.x.zip && \
-    unzip rabbitmq_message_timestamp-20170830-3.7.x.zip && \
-    rm -f rabbitmq_message_timestamp-20170830-3.7.x.zip && \
-    mv rabbitmq_message_timestamp-20170830-3.7.x.ez /plugins/
+RUN wget https://github.com/rabbitmq/rabbitmq-message-timestamp/releases/download/v3.8.0/rabbitmq_message_timestamp-3.8.0.ez && \
+    mv rabbitmq_message_timestamp-3.8.0.ez /plugins/
 
