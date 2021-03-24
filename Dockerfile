@@ -1,4 +1,4 @@
-FROM bitnami/rabbitmq:3.8.10-debian-10-r0
+FROM bitnami/rabbitmq:3.8.14-debian-10-r19
 
 USER root
 
